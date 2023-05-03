@@ -29,7 +29,7 @@ def simulate_user_feeds(gtv_path):
         bbox = region.bbox
         point_not_found = True
         iterations = 0
-        if region.area>800: # only label volume larger than 1000 pixels
+        if region.area>800: # only label volume larger than 800 voxels
             
             while point_not_found and iterations<10000000:
                 radius = random.choice([2,3,4,5])           
